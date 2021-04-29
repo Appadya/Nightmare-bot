@@ -6,7 +6,8 @@ const Category = require('../models/Category'),
 		Ping,
 		Inspire,
 		Prune,
-		Waifu
+		Waifu,
+		Say
 	} = require('../requires');
 
 module.exports = class Commands {
@@ -28,7 +29,10 @@ module.exports = class Commands {
 		], [], this.#categories.MOD),
 		new Waifu("generatewaifu", "Generates a waifu for you.", [
 			new Argument("0.5<=>2.0")
-		], ["genwaifu", "mywaifu", "waifu"], this.#categories.MISC)
+		], ["genwaifu", "mywaifu", "waifu"], this.#categories.MISC),
+		new Say("say", "Make me say something!", [
+			new Argument("message", true)
+		], ["falar"], this.#categories.MISC)
 	]
 
 	getCommands() {

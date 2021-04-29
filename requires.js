@@ -5,7 +5,8 @@ const Help = require(COMMANDS_PATH.concat('Help')),
 	Ping = require(COMMANDS_PATH.concat('Ping')),
 	Inspire = require(COMMANDS_PATH.concat('Inspire')),
 	Prune = require(COMMANDS_PATH.concat('Prune')),
-	Waifu = require(COMMANDS_PATH.concat('Waifu'));
+	Waifu = require(COMMANDS_PATH.concat('Waifu')),
+	Say = require(COMMANDS_PATH.concat('Say'));
 
 module.exports = {
 	Help,
@@ -13,5 +14,6 @@ module.exports = {
 	Ping,
 	Inspire,
 	Prune,
-	Waifu
+	Waifu,
+	Say
 }
